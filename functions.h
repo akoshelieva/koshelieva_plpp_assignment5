@@ -1,9 +1,11 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 #include <cmath>
-double pow(double base , double exp);
-double abs(double x);
-double max(double a, double b);
-double min(double a, double b);
+namespace mathlib {
+    double Pow (double base, double exp);
+    double Abs (double x);
+    double Max (double a, double b);
+    double Min (double a, double b);
+}
 
 #endif //FUNCTIONS_H

@@ -1,6 +1,8 @@
 #include "functions.h"
 #include <cmath>
-double pow(double base, double exp) { return std::pow(base, exp); }
-double abs(double x) { return std::abs(x); }
-double max(double a, double b) { return a > b ? a : b; }
-double min(double a, double b) { return a < b ? a : b; }
+namespace mathlib {
+    double Pow(double base, double exp) { return std::pow(base, exp); }
+    double Abs(double x)                { return std::abs(x);        }
+    double Max(double a, double b)      { return (a > b) ? a : b;    }
+    double Min(double a, double b)      { return (a < b) ? a : b;    }
+}
